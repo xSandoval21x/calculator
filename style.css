@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+#title {
+    opacity: 0.2;
+}
+
+button {
+    margin: 5px;
+}
+
+.calc-container {
+    justify-self: center;
+    align-self: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1.5fr repeat(5, 1fr);
+    padding: 10px;
+    height: 400px;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+#screen {
+    grid-column-start: span 4;
+    background: rgba(0, 0, 0, 0.1);
+    margin: 5px;
+    border-radius: 5px;
+}
+
+#clear {
+    grid-column-start: span 3;
+}
+
+#equals {
+    grid-column-start: span 2;
+}
