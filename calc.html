@@ -1,32 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link href="https://fonts.googleapis.com/css2?family=Assistant&family=Roboto&display=swap" rel="stylesheet">
         <link href="style.css" type="text/css" rel="stylesheet">
     </head>
-
+    
     <body>
         <h1 id="title">Calculator</h1>
         <div class="calc-container">
-            <div id="screen"></div>
+            <div class="screen">
+                <div id="previous-input"></div>
+                <div id="current-input"></div>
+            </div>
             <button id="clear">C</button>
-            <button id="divide">/</button>
-            <button id="seven">7</button>
-            <button id="eight">8</button>
-            <button id="nine">9</button>
-            <button id="multiply">*</button>
-            <button id="four">4</button>
-            <button id="five">5</button>
-            <button id="six">6</button>
-            <button id="subtract">-</button>
-            <button id="one">1</button>
-            <button id="two">2</button>
-            <button id="three">3</button>
-            <button id="add">+</button>
-            <button id="zero">0</button>
-            <button id="point">.</button>
+            <button id="delete">&larr;</button>
+            <button data-operation>/</button>
+            <button data-number>7</button>
+            <button data-number>8</button>
+            <button data-number>9</button>
+            <button data-operation>*</button>
+            <button data-number>4</button>
+            <button data-number>5</button>
+            <button data-number>6 </button>
+            <button data-operation>-</button>
+            <button data-number>1</button>
+            <button data-number>2</button>
+            <button data-number>3</button>
+            <button data-operation>+</button>
+            <button data-number>0</button>
+            <button data-number>.</button>
             <button id="equals">=</button>
         </div>
-
+        
+        <footer>
+            <div id="sandoval">xSandoval21x</div>
+        </footer>
         <script src="script.js"></script>
     </body>
-</html>
+    </html>
