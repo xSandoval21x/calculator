@@ -7,14 +7,20 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Assistant', sans-serif;
-    background: linear-gradient(45deg, rgba(255, 34, 67, 0.575), rgba(34, 238, 238, 0.5), rgba(17, 221, 51, 0.445));
 }
 
+#title-banner {
+    height: 70px;
+    width: 100%;
+    background: linear-gradient(to right, #90db45, #72c91c, #73d115, rgb(252, 98, 42),
+    #fc4036, #4badf3);
+    margin-bottom: auto;
+}
 #title {
-    opacity: 0.2;
+    color: rgb(255, 255, 255);
     margin-top: 5px;
     margin-left: 5px;
-    margin-bottom: 50px;
+    font-size: 48pt;
 }
 
 .calc-container {
@@ -24,9 +30,9 @@ body {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: minmax(100px, auto) repeat(5, 1fr);
     padding: 10px;
-    height: 450px;
-    width: 300px;
-    background: linear-gradient(45deg, rgb(177, 248, 248), rgb(138, 245, 245));
+    height: 550px;
+    width: 350px;
+    background: linear-gradient(45deg, rgb(219, 219, 219), rgb(94, 94, 94));
     border-radius: 10px;
     box-shadow: 5px -5px 10px rgba(0, 0, 0, 0.5);
 }
@@ -39,6 +45,7 @@ button {
     border-radius: 10px;
     outline: none;
     cursor: pointer;
+    box-shadow: 2px -2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .operator-buttons {
@@ -48,6 +55,7 @@ button {
 button:active {
     transform: scale(0.91);
     filter: brightness(80%);
+    box-shadow: 1px -1px 2px rgba(0, 0, 0, 0.5);
 
 }
 
@@ -57,11 +65,12 @@ button:active {
     display: flex;
     flex-direction: column;
     grid-column-start: span 4;
-    background: rgb(255, 158, 239);
+    background: rgb(248, 248, 248);
     margin: 5px;
     border-radius: 10px;
     text-align: center;
     overflow: hidden;
+    box-shadow: inset 2px -2px 5px rgba(0, 0, 0, 0.5);
 }
 
 #previous-input {

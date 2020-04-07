@@ -13,6 +13,7 @@ class Calculator {
     }
 
     delete() {
+        if(this.current === 'error') return;
         this.current = this.current.toString().slice(0, -1);
     }
 
@@ -150,3 +151,38 @@ deleteButton.addEventListener('click', button => {
 operationButtons.forEach(button => {
     button.classList.add('operator-buttons');
 });
+
+window.addEventListener('keydown', insertKbNumber);
+
+function insertKbNumber(e) {
+    const kbInput = e.key;
+    const check0to9 = /[\d.]/;
+    const checkOperand = /[+\-*\/]/;
+    const checkEquals = /[\=Enter]/;
+    const checkDelete = /[BackspaceDelete]/;
+
+    if (kbInput.match(check0to9)) {
+        if(kbInput === 'Shift') return;
+        calculator.insertNum(kbInput);
+        calculator.updateDisplay();
+    }
+    
+    if(kbInput.match(checkOperand)) {
+        if(kbInput === 'Shift') return;
+        calculator.insertOperator(kbInput);
+        calculator.updateDisplay();
+    }
+
+    if(kbInput.match(checkEquals)) {
+        if(kbInput === 'Shift') return;
+        calculator.compute();
+        calculator.updateDisplay();
+    }
+
+    if(kbInput.match(checkDelete)) {
+        if(kbInput === 'Shift' || kbInput ==='Enter') return;
+        calculator.delete();
+        calculator.updateDisplay();
+    }
+
+}
