@@ -6,11 +6,11 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Assistant', sans-serif;
+    background: linear-gradient(45deg, rgba(255, 34, 67, 0.575), rgba(34, 238, 238, 0.5), rgba(17, 221, 51, 0.445));
 }
 
 #title {
-    font-family: 'Assistant', sans-serif;
     opacity: 0.2;
     margin-top: 5px;
     margin-left: 5px;
@@ -26,8 +26,9 @@ body {
     padding: 10px;
     height: 450px;
     width: 300px;
-    border: 1px solid black;
+    background: linear-gradient(45deg, rgb(177, 248, 248), rgb(138, 245, 245));
     border-radius: 10px;
+    box-shadow: 5px -5px 10px rgba(0, 0, 0, 0.5);
 }
 
 button {
@@ -40,6 +41,10 @@ button {
     cursor: pointer;
 }
 
+.operator-buttons {
+    background: linear-gradient(to right, rgb(250, 133, 90), rgb(252, 98, 42));
+}
+
 button:active {
     transform: scale(0.91);
     filter: brightness(80%);
@@ -48,13 +53,15 @@ button:active {
 
 
 .screen {
+    font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
     grid-column-start: span 4;
-    background: rgba(0, 0, 0, 0.05);
+    background: rgb(255, 158, 239);
     margin: 5px;
     border-radius: 10px;
     text-align: center;
+    overflow: hidden;
 }
 
 #previous-input {
@@ -78,16 +85,16 @@ button:active {
 
 #clear {
     grid-column-start: span 2;
-    background: #77ca23
+    background: linear-gradient(to right, #90db45, #72c91c);
 }
 
 #delete {
-    background: #ff5149;
+    background: linear-gradient(to right, #fc6760, #fc4036);
 }
 
 #equals {
     grid-column-start: span 2;
-    background: #3098e0
+    background: linear-gradient(to right, #4badf3, #2a97e6);
 }
 
 footer {
@@ -103,4 +110,5 @@ footer {
 
 #sandoval {
     margin-right: 5px;
+    color: rgba(0, 0, 0, 0.5);
 }

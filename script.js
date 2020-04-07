@@ -18,6 +18,7 @@ class Calculator {
 
     insertNum(num) {
         if(num === '.' && this.current.includes('.')) return;
+        if(this.current === 'error') return;
         this.current += num;
     }
 
@@ -26,6 +27,8 @@ class Calculator {
         if(this.previous !== ''){
             this.compute();
         }
+
+        if(this.current == 'error' ) return;
         this.operation = operation;
         this.previous = this.current;
         this.current = '';
@@ -49,6 +52,10 @@ class Calculator {
                 total = prev * curr;
                 break;
             case '/':
+                if(curr == 0) {
+                    this.divisionByZero();
+                    return;
+                }
                 total = prev / curr;
                 break;
         }
@@ -80,6 +87,12 @@ class Calculator {
     }
 
     updateDisplay() {      
+        if(this.current === 'error'){
+            this.currentTextElement.innerText = "You can't divide by 0";
+            this.previousTextElement.innerText = "Wait, that's illegal!";
+            return;
+        }
+
         this.currentTextElement.innerText = this.getDisplayNumber(this.current);
         if(this.operation != null) {
             this.previousTextElement.innerText = `${this.getDisplayNumber(this.previous)} ${this.operation}`;
@@ -87,6 +100,11 @@ class Calculator {
             this.previousTextElement.innerText = this.previous;
         }
         
+    }
+
+    divisionByZero () {
+        this.current = 'error';
+        this.previous = 'error';
     }
 }
 
