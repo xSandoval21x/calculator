@@ -1,17 +1,15 @@
-# Calculator
+### Calculator
 A web version of a calculator made using HTML, CSS, and Javascript<br>
 Project from the Odin Project curriculum
 
-<h1>Project Description</h1>
-  <ul>
-    <li>Four function calculator that can add, subtract, multiply, and divide numbers</li>
-    <li>Screen contains two lines, the top line being the previous calculation input by
-        the user, and the lower line being the current user input</li>
-    <li>Can calculate floating point numbers</li>
-    <li>Has a backspace button for deleting the latest input by user</li>
-    <li>Will not permit division by zero</li>
-    <li>Keyboard input supported</li>
-  </ul>
+###Project Description
+  • Four function calculator that can add, subtract, multiply, and divide numbers
+  • Screen contains two lines, the top line being the previous calculation input by
+    the user, and the lower line being the current user input
+  • Can calculate floating point numbers
+  • Has a backspace button for deleting the latest input by user
+  • Will not permit division by zero
+  • Keyboard input supported
     
 <h1>Project Reflection</h1>
   <ul>
