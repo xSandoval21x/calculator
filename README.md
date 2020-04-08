@@ -1,5 +1,6 @@
-#Calculator
-A calculator made using HTML, CSS, and Javascript
+# Calculator
+A web version of a calculator made using HTML, CSS, and Javascript
+Project from the Odin Project curriculum
 
 <h1>Project Description</h1>
   <ul>
