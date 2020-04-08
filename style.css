@@ -10,16 +10,18 @@ body {
 }
 
 #title-banner {
-    height: 70px;
+    height: 10%;
     width: 100%;
     background: linear-gradient(to right, #90db45, #72c91c, #73d115, rgb(252, 98, 42),
     #fc4036, #4badf3);
     margin-bottom: auto;
 }
 #title {
+    display: block;
     color: rgb(255, 255, 255);
     margin-top: 5px;
     margin-left: 5px;
+    margin-bottom: 0px;
     font-size: 48pt;
 }
 
@@ -28,10 +30,10 @@ body {
     align-self: center;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: minmax(100px, auto) repeat(5, 1fr);
+    grid-template-rows: minmax(125px, auto) repeat(5, 1fr);
     padding: 10px;
-    height: 550px;
-    width: 350px;
+    height: 500px;
+    width: 325px;
     background: linear-gradient(45deg, rgb(219, 219, 219), rgb(94, 94, 94));
     border-radius: 10px;
     box-shadow: 5px -5px 10px rgba(0, 0, 0, 0.5);
