@@ -4,8 +4,7 @@ Project from the Odin Project curriculum
 
 ### Project Description
 Markup : * Four function calculator that can add, subtract, multiply, and divide numbers
-         * Screen contains two lines, the top line being the previous calculation input by
-         the user, and the lower line being the current user input
+         * Screen contains two lines, the top line being the previous calculation input by the user, and the lower line being the current user input
          * Can calculate floating point numbers
          * Has a backspace button for deleting the latest input by user
          * Will not permit division by zero
