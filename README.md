@@ -11,12 +11,10 @@ Project from the Odin Project curriculum
 * Keyboard input supported
     
 ### Project Reflection
-  • It was difficult at first to try and manipulate all the variables and keep
-      everything organized
-  • I learned that making a calculator object using a class would make the handling of
-  variables easier
-  • I am getting more comfortable with adding event listeners and DOM manipulation
-  • Using CS Grid to make the calculator layout worked wonders, it was very simple to use
-  • I am getting more comfortable with CSS styling and getting elements where I want them
-  • The chrome dev tools was a valuable asset when checking the functionaluty of my javascript
+* It was difficult at first to try and manipulate all the variables and keep everything organized
+* I learned that making a calculator object using a class would make the handling of variables easier
+* I am getting more comfortable with adding event listeners and DOM manipulation
+* Using CS Grid to make the calculator layout worked wonders, it was very simple to use
+* I am getting more comfortable with CSS styling and getting elements where I want them
+* The chrome dev tools was a valuable asset when checking the functionaluty of my javascript
 
