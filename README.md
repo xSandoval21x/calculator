@@ -3,7 +3,7 @@ A web version of a calculator made using HTML, CSS, and Javascript<br>
 Project from the Odin Project curriculum
 
 ### Project Description
-Markup:  * Four function calculator that can add, subtract, multiply, and divide numbers
+Markup : * Four function calculator that can add, subtract, multiply, and divide numbers
          * Screen contains two lines, the top line being the previous calculation input by
          the user, and the lower line being the current user input
          * Can calculate floating point numbers
