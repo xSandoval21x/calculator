@@ -158,8 +158,8 @@ function insertKbNumber(e) {
     const kbInput = e.key;
     const check0to9 = /[\d.]/;
     const checkOperand = /[+\-*\/]/;
-    const checkEquals = /[\=Enter]/;
-    const checkDelete = /[BackspaceDelete]/;
+    const checkEquals = /[\=\Enter]/;
+    const checkDelete = /[\Backspace\Delete]/;
 
     if (kbInput.match(check0to9)) {
         if(kbInput === 'Shift') return;

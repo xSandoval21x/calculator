@@ -15,6 +15,10 @@ body {
     background: linear-gradient(to right, #90db45, #72c91c, #73d115, rgb(252, 98, 42),
     #fc4036, #4badf3);
     margin-bottom: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
 }
 #title {
     display: block;
@@ -22,7 +26,7 @@ body {
     margin-top: 5px;
     margin-left: 5px;
     margin-bottom: 0px;
-    font-size: 48pt;
+    font-size: 5vw;
 }
 
 .calc-container {
@@ -32,8 +36,8 @@ body {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: minmax(125px, auto) repeat(5, 1fr);
     padding: 10px;
-    height: 500px;
-    width: 325px;
+    height: 450px;
+    width: 300px;
     background: linear-gradient(45deg, rgb(219, 219, 219), rgb(94, 94, 94));
     border-radius: 10px;
     box-shadow: 5px -5px 10px rgba(0, 0, 0, 0.5);
