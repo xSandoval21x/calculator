@@ -10,7 +10,7 @@ body {
 }
 
 #title-banner {
-    height: 10%;
+    height: 8vw;
     width: 100%;
     background: linear-gradient(to right, #90db45, #72c91c, #73d115, rgb(252, 98, 42),
     #fc4036, #4badf3);
